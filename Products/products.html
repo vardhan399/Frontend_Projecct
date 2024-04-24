@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="./products.css" />
+    <title>Products</title>
+  </head>
+  <body>
+    <header>
+      <nav class="section__container nav__container">
+        <div class="nav__logo">Medi<span>Syncer</span></div>
+        <ul class="nav__links">
+          <li class="link"><a href="../Home Page/index.html">Home</a></li>
+          <li class="link"><a href="../about/about.html">About Us</a></li>
+          <li class="link"><a href="../services/service.html">Services</a></li>
+          <li class="link"><a href="products.html">Products</a></li>
+          <li class="link"><a href="../Doctor/doctor.html">Doctor's</a></li>
+        </ul>
+        <a href="../Contact/contact.html" class="btn">Contact us</a>
+      </nav>
+      
+    </header>
+
+
+
+
+
+   
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Eyedrops')">
+          Eyedrops
+        </button>
+        <button class="button-value" onclick="filterProduct('Cold')">
+          Cold
+        </button>
+        <button class="button-value" onclick="filterProduct('Fever')">
+          Fever
+        </button>
+        <button class="button-value" onclick="filterProduct('Cough')">
+          Cough
+        </button>
+      </div>
+      <div id="products"></div>
+    </div>
+
+
+    <!-- Script -->
+    <script src="./products.js"></script>
+ 
+
+
+
+
+  </body>
+  </html>
